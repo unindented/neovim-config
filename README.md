@@ -2,6 +2,8 @@
 
 My [Neovim](https://neovim.io) / [AstroNvim](https://github.com/AstroNvim/AstroNvim) config.
 
+![Screenshot of terminal](./docs/screenshot.png)
+
 ## Installation
 
 Clone this repo into `~/.config/nvim`:
