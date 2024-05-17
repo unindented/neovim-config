@@ -22,6 +22,53 @@ nvim
 >
 > Run `:checkhealth` to identify and resolve any issues.
 
+### Node
+
+Install the `neovim` package:
+
+```
+npm i -g neovim
+```
+
+### Perl
+
+Install `cpanm` to make installing other modules easier:
+
+```
+cpan App::cpanminus
+```
+
+Then install the `Neovim` module:
+
+```
+cpanm -n Neovim::Ext
+```
+
+> [!NOTE]
+>
+> You may need to symlink `cpanm` yourself:
+>
+> ```
+> cd "$(brew --prefix)/bin"
+> ln -s ../Cellar/perl/5.38.2_1/bin/cpanm cpanm
+> ```
+
+### Python
+
+Install the `pynvim` package:
+
+```
+python3 -m pip install --user --upgrade pynvim
+```
+
+### Ruby
+
+Install the `neovim` gem:
+
+```
+gem install neovim
+```
+
 ## Meta
 
 - Code: `git clone https://github.com/unindented/neovim-config.git`
