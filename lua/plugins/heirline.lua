@@ -1,3 +1,4 @@
+---@type LazySpec
 return {
   "rebelot/heirline.nvim",
   dependencies = {
@@ -12,12 +13,12 @@ return {
   opts = function(_, opts)
     local status = require "astroui.status"
 
-    -- add mode text to first indicator
+    -- Add mode text to first indicator.
     opts.statusline[1] = status.component.mode {
       mode_text = { padding = { left = 1, right = 1 } },
     }
 
-    -- add date/time to last indicator
+    -- Add date/time to last indicator.
     --opts.statusline[#opts.statusline] = status.component.builder {
     --  {
     --    provider = function()
@@ -37,10 +38,10 @@ return {
     --  },
     --}
 
-    -- timer for updating the time
+    -- Timer for updating the time.
     --local uv = vim.uv or vim.loop
     --uv.new_timer():start(
-    --  (60 - tonumber(os.date "%S")) * 1000, -- offset timer based on current seconds past the minute
+    --  (60 - tonumber(os.date "%S")) * 1000,
     --  60 * 1000, -- update every 60 seconds
     --  vim.schedule_wrap(function() vim.api.nvim_exec_autocmds("User", { pattern = "UpdateTime", modeline = false }) end)
     --)

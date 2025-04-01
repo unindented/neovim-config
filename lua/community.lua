@@ -1,12 +1,16 @@
--- AstroCommunity: import any community modules here
--- We import this file in `lazy_setup.lua` before the `plugins/` folder.
--- This guarantees that the specs are processed before any user plugins.
-
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
+  -- Color schemes.
   { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.recipes.neovide" },
+  -- Language packs.
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.cmake" },
+  { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.lua" },
-  -- import/override with your plugins folder
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.rust" },
+  -- Other recipes.
+  { import = "astrocommunity.recipes.neovide" },
 }
