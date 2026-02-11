@@ -3,6 +3,7 @@ return {
   "AstroNvim/astrocommunity",
   -- Color schemes.
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.color.transparent-nvim" },
   -- Language packs.
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.cmake" },

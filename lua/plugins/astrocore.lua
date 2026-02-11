@@ -15,5 +15,10 @@ return {
         [";"] = { ":", noremap = true },
       },
     },
+    options = {
+      opt = {
+        showtabline = 0,
+      },
+    },
   },
 }
